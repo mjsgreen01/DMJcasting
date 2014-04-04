@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="aboutAndContact.css"/>
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.10.4.custom.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery-ui-1.10.4.custom.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+	    <script src="http://malsup.github.com/jquery.form.js"></script>
+	    <!--Custom Validation Rules & settings-->
+	    <script>
+	        $(document).ready(function() {
+	          $('#CreditAuthorize').validate({
+	            errorContainer: "#errorbox1",
+	          errorLabelContainer: "#errorbox1 ul",
+	          wrapper: "li",
+
+	          rules: {
+	              companyName: "required",              
+	              address: "required",
+	              city: "required",
+	              state: "required",
+	              zipcode: "required",
+	              amountCharge: "required",
+	              date: "required",
+	              toCompanyName: "required",
+	              toAddress: "required",
+	              toCity: "required",
+	              toState: "required",
+	              toZipCode: "required",
+	              shipMethod: "required",
+	              cardType: "required",
+	              billName: "required",
+	              billNumber: "required",
+	              billSecurCode: "required",
+	              billExpire: "required",
+	              billSignature: "required",
+	              
+	              
+	          },
+
+	          messages: {
+	              firstName: "This is a comment form. Why in the heck would you leave the comment blank?",
+	              lastName: "What the fuck is your last name",
+	              email: {
+	                  required: "Dude, you want the newsletter, but you didn't enter an email address?",
+	                  email: "Email addresses are of the form user@host. Not yourRstupid."
+	              },
+	          },
+
+	          
+	            
+	          
+	          });
+	          $('#CreditAuthorize').ajaxForm(function() { 
+	                      alert("Thank you for your comment!"); 
+	          }); 
+	      }); 
+	    </script>
+	    <script>
+	        $(document).ready(function() {
+	          $('#CreditApplication').validate({
+	            errorContainer: "#errorbox2",
+	          errorLabelContainer: "#errorbox2 ul",
+	          wrapper: "li",
+
+	          rules: {
+	              applyCompanyName: "required",
+	              applyAddress: "required",
+	              applyCity: "required",
+	              applyState: "required",
+	              ApplyZipcode: "required",
+	              applyTel: "required",
+	              applyFax: "required",
+	              applyEmail: {
+	                   required: true,
+	                   email: true,
+	              },
+	              applyOwner: "required",
+	              applyAuthBuyer: "required",
+	              applyAccPay: "required",
+	              applyAccPayEm: "required",
+	              applyBusType: "required",
+	              applySellerID: "required",
+	              applyDateEstab: "required",
+	              applyBankName: "required",
+	              applyBankAddress: "required",
+	              applyBankTel: "required",
+	              applyRefName1: "required",
+	              applyRefName2: "required",
+	              applyRefPhone2: "required",
+	              applyRefName3: "required",
+	              applyRefPhone3: "required",
+	              applySignature: "required",
+	                     
+	          },
+
+	          messages: {
+	              firstName: "This is a comment form. Why in the heck would you leave the comment blank?",
+	              lastName: "What the fuck is your last name",
+	              email: {
+	                  required: "Dude, you want the newsletter, but you didn't enter an email address?",
+	                  email: "Email addresses are of the form user@host. Not yourRstupid."
+	              },
+	          },
+
+	          
+	            
+	          
+	          });
+	          $('#Creditapplication').ajaxForm(function() { 
+	                      alert("Thank you for your comment!"); 
+	          }); 
+	      }); 
+	    </script>
+			<title>DMJ Casting</title>
+			<!-- Enabling HTML5 support for Internet Explorer -->
+	        <!--[if lt IE 9]>
+	          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	        <![endif]-->
+        
+	</head>
+<body>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src = "DMJweb.js">
+	</script>
+	<!--<script src = "DMJparallax.js"></script>-->
+	<!--<script src = "inViewPlugin.js"></script>-->
+
+	<!--Styling drop-down menu in conversion section -->
+        <link href="select2.css" rel="stylesheet"/>
+	    <script src="select2.js"></script>
+	    <script>
+	        $(document).ready(function() { $(".e1").select2({
+	        	placeholder: "Select a Metal",
+			    allowClear: true}); });
+	    </script>
+
+	<div class="fixedNav">
+		<header id = "mainHead">
+			
+			<nav>
+				<div class="logo">
+					<img src="http://i39.tinypic.com/w02hcz.png"/>
+				</div>
+				<ul id="mainNavUL">
+					
+					<a href="#"><li id="about">About</li></a>
+					<div class="divider"></div>
+					<a href="#"><li id="contactUs">Contact Us</li></a>
+				</ul>
+			</nav>
+			
+		</header>
+
+	</div>
+	<div id="filler">
+	</div>
+	<div id="headSection" class='headParal'>
+		<img id="headImg" class='headImg' src = "http://i39.tinypic.com/qx10eu.png"/>
+	</div>
+
+	<div id="scrollTopDiv"></div>
+
+	<div id="sec1" class="goldSection first">
+		<div class="textSection textFloatLeft">	
+			<div class = "titleDiv">
+				<p class="title">About Us</p>
+			</div>
+			<br>
+			<div class="contentDiv"  id="aboutContentDiv">
+				<p class="content contentWithImage" id="aboutContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam, augue vitae scelerisque tincidunt, nisi eros placerat sapien, ac fringilla dui ipsum in arcu. Aliquam quis congue turpis. Vestibulum in nibh sollicitudin, dapibus neque vitae, ultricies sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut varius sollicitudin suscipit. Sed varius iaculis odio, id feugiat lorem venenatis ac.
+				<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam, augue vitae scelerisque tincidunt, nisi eros placerat sapien, ac fringilla dui ipsum in arcu. Aliquam quis congue turpis. Vestibulum in nibh sollicitudin, dapibus neque vitae, ultricies sem. 
+				</p>
+			</div>
+		</div>
+		<div class="imgDiv whiteFrame imgFloatRight">
+			<div class="innerGoldFrame">
+				<img src="AboutUsImg2.jpg" />
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="sec6" class="whiteSection sixth">
+		<div class="textSection textFloatLeft">	
+			<div class = "titleDiv">
+				<p class="title">Contact Us</p>
+			</div>
+			<br>
+			<div class="contentDiv" id="contactContentDiv">
+				<p class="content"></p>
+				<div class="content" id="phoneDiv">
+					<p>212-719-1951</p>
+				</div>
+				<div class="content" id="emailDiv">
+					<p>info@DMJcasting.com</p>
+				</div>
+				<div class="content" id="addressDiv">
+					<p>62 W 47th St <br># 508, <br>New York, NY 10036</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+
+
+
+
+	<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    	skrollr.init();
+    </script>
+
+</body>
+</html>
