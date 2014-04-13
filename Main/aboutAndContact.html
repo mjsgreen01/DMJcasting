@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="aboutAndContact.css"/>
+		<link type="text/css" rel="stylesheet" href="jquery-ui-1.10.4.custom.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery-ui-1.10.4.custom.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+	    <script src="http://malsup.github.com/jquery.form.js"></script>
+	    <!--Custom Validation Rules & settings-->
+	    <script>
+	        $(document).ready(function() {
+	          $('#CreditAuthorize').validate({
+	            errorContainer: "#errorbox1",
+	          errorLabelContainer: "#errorbox1 ul",
+	          wrapper: "li",
+
+	          rules: {
+	              companyName: "required",              
+	              address: "required",
+	              city: "required",
+	              state: "required",
+	              zipcode: "required",
+	              amountCharge: "required",
+	              date: "required",
+	              toCompanyName: "required",
+	              toAddress: "required",
+	              toCity: "required",
+	              toState: "required",
+	              toZipCode: "required",
+	              shipMethod: "required",
+	              cardType: "required",
+	              billName: "required",
+	              billNumber: "required",
+	              billSecurCode: "required",
+	              billExpire: "required",
+	              billSignature: "required",
+	              
+	              
+	          },
+
+	          messages: {
+	              firstName: "This is a comment form. Why in the heck would you leave the comment blank?",
+	              lastName: "What the fuck is your last name",
+	              email: {
+	                  required: "Dude, you want the newsletter, but you didn't enter an email address?",
+	                  email: "Email addresses are of the form user@host. Not yourRstupid."
+	              },
+	          },
+
+	          
+	            
+	          
+	          });
+	          $('#CreditAuthorize').ajaxForm(function() { 
+	                      alert("Thank you for your comment!"); 
+	          }); 
+	      }); 
+	    </script>
+	    <script>
+	        $(document).ready(function() {
+	          $('#CreditApplication').validate({
+	            errorContainer: "#errorbox2",
+	          errorLabelContainer: "#errorbox2 ul",
+	          wrapper: "li",
+
+	          rules: {
+	              applyCompanyName: "required",
+	              applyAddress: "required",
+	              applyCity: "required",
+	              applyState: "required",
+	              ApplyZipcode: "required",
+	              applyTel: "required",
+	              applyFax: "required",
+	              applyEmail: {
+	                   required: true,
+	                   email: true,
+	              },
+	              applyOwner: "required",
+	              applyAuthBuyer: "required",
+	              applyAccPay: "required",
+	              applyAccPayEm: "required",
+	              applyBusType: "required",
+	              applySellerID: "required",
+	              applyDateEstab: "required",
+	              applyBankName: "required",
+	              applyBankAddress: "required",
+	              applyBankTel: "required",
+	              applyRefName1: "required",
+	              applyRefName2: "required",
+	              applyRefPhone2: "required",
+	              applyRefName3: "required",
+	              applyRefPhone3: "required",
+	              applySignature: "required",
+	                     
+	          },
+
+	          messages: {
+	              firstName: "This is a comment form. Why in the heck would you leave the comment blank?",
+	              lastName: "What the fuck is your last name",
+	              email: {
+	                  required: "Dude, you want the newsletter, but you didn't enter an email address?",
+	                  email: "Email addresses are of the form user@host. Not yourRstupid."
+	              },
+	          },
+
+	          
+	            
+	          
+	          });
+	          $('#Creditapplication').ajaxForm(function() { 
+	                      alert("Thank you for your comment!"); 
+	          }); 
+	      }); 
+	    </script>
+			<title>DMJ Casting</title>
+			<!-- Enabling HTML5 support for Internet Explorer -->
+	        <!--[if lt IE 9]>
+	          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	        <![endif]-->
+        
+	</head>
+<body>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src = "DMJweb.js">
+	</script>
+	<!--<script src = "DMJparallax.js"></script>-->
+	<!--<script src = "inViewPlugin.js"></script>-->
+
+	<!--Styling drop-down menu in conversion section -->
+        <link href="select2.css" rel="stylesheet"/>
+	    <script src="select2.js"></script>
+	    <script>
+	        $(document).ready(function() { $(".e1").select2({
+	        	placeholder: "Select a Metal",
+			    allowClear: true}); });
+	    </script>
+
+	<div class="fixedNav">
+		<header id = "mainHead">
+			
+			<nav>
+				<div class="logo">
+					<img src="http://i39.tinypic.com/w02hcz.png"/>
+				</div>
+				<ul id="mainNavUL">
+					
+					<a href="#"><li id="about">About</li></a>
+					<div class="divider"></div>
+					<a href="#"><li id="technology">Services & Tech</li></a>
+					<div class="divider"></div>
+					<a href="#"><li id="conversions">Tools & Forms</li></a>
+					<div class="divider"></div>
+					<a href="#"><li id="contactUs">Contact Us</li></a>
+				</ul>
+			</nav>
+			
+		</header>
+
+	</div>
+	<div id="filler">
+	</div>
+	<div id="headSection" class='headParal'>
+		<img id="headImg" class='headImg' src = "http://i39.tinypic.com/qx10eu.png"/>
+	</div>
+
+	<div id="scrollTopDiv"></div>
+
+	<div id="sec1" class="goldSection first">
+		<div class="textSection textFloatLeft">	
+			<div class = "titleDiv">
+				<p class="title">About Us</p>
+			</div>
+			<br>
+			<div class="contentDiv"  id="aboutContentDiv">
+				<p class="content contentWithImage" id="aboutContent">Founded in 1986, DMJ Casting Inc. is an artisan casting firm located in the heart of NYC's historic jewelry district. No client is too big or small for our team of committed casting professionals - we take pride in giving every DMJ customer our full and undivided time and effort.<br><br>At DMJ we're versed in working with both local and international clients – our team speaks over 10 languages and hails from all around the world ourselves! There is no limit to what this group can cast, though we do take particular pride in our best-selling platinum and palladium work.<br><br>With over 25 years of casting experience, you can trust DMJ to exceed your casting needs.
+				</p>
+			</div>
+		</div>
+		<div class="imgDiv whiteFrame imgFloatRight">
+			<div class="innerGoldFrame">
+				<img src="AboutUsImgUnedited.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<div id="sec3" class="whiteSection third">
+		<div class="textSection textFloatLeft">	
+			<div class = "titleDiv">
+				<p class="title">Services & Technology</p>
+			</div>
+			<br>
+			<div class="contentDiv" id="technologyContentDiv">
+				<p class="content">At DMJ we are certain to keep our technology on the cutting edge of industry standards, which guarantees our fast, reliable service. You need a rare color cast? No problem – we specialize in crafting any rare color alloys you may need. We specifically excel in platinum & palladium work done on our Seit CS1. We are well practiced in any precious or non-precious metals work. Special requests are welcome – even encouraged!<br><br>
+
+				We can do CAD design and printing, which is done by our in-house specialist. All our CAD Designs are done with the Solidscape 3D machine.<br>
+				For specific questions or requests, our CAD expert can be contacted at cadcamDMJ@gmail.com, or 646-327-6470.<br><br>
+
+				Our casting specialists are always available for consultations on casting specific projects and special needs
+
+				</p>
+			</div>
+		</div>
+		<!--<div class="imgDiv blackFrame imgFloatRight">
+			<div class="innerWhiteFrame">
+				<img src="http://i44.tinypic.com/20ur68n.jpg" />
+			</div>
+		</div>-->
+	</div>
+	
+
+<div id="sec4" class="goldSection fourth">
+		<div class="centerContentDiv">
+			<div id="tabs">
+			  <ul>
+			    <li><a href="#fragment-1"><span>Weight Conversions</span></a></li>
+			    <li><a href="#fragment-2"><span>Credit Card Authorization</span></a></li>
+			    <li><a href="#fragment-3"><span>Apply For Credit</span></a></li>
+			  </ul>
+			  <div id="fragment-1">
+			    <div class="centerContentDiv">
+
+			      <script src = "conversionTable.js">
+			      </script>
+			      <div id="conversionContainer">
+				      <form id"conversion">
+				        <div id="fromMetalContainer" class="formSpace">Present Metal: <br><select class="e1" id="fromMetal">
+				          <option></option>
+				          <option value="Wax">Wax</option>
+				          <option value="10k Yellow">10k Yellow</option>
+				          <option value="10k White">10k White</option>
+				          <option value="14k Yellow">14k Yellow</option>
+				          <option value="14k White">14k White</option>
+				          <option value="18k Yellow">18k Yellow</option>
+				          <option value="18k White">18k White</option>
+				          <option value="Sterling Silver">Sterling Silver</option>
+				          <option value="Platinum(95.2%)">Platinum(95.2%)</option>
+				          <option value="Alloy">Alloy</option>
+				          <option value="24k(F.Gold)">24k(F.Gold)</option>
+				        </select></div>
+				        
+				        <div id="toMetalDiv" class="formSpace">Desired Metal:<br> <select class="e1" id="toMetal">
+				          <option></option>
+				          <option value="10k Yellow">10k Yellow</option>
+				          <option value="10k White">10k White</option>
+				          <option value="14k Yellow">14k Yellow</option>
+				          <option value="14k White">14k White</option>
+				          <option value="18k Yellow">18k Yellow</option>
+				          <option value="18k White">18k White</option>
+				          <option value="Sterling Silver">Sterling Silver</option>
+				          <option value="Platinum(95.2%)">Platinum(95.2%)</option>
+				          <option value="Alloy">Alloy</option>
+				          <option value="24k(F.Gold)">24k(F.Gold)</option>
+				        </select></div>
+				        <div id="inWeightContainer"><p class="formSpace">Weight in Present Form (dwt):</p><br>
+				        	<input type='number' name='inweight' id='inWeight'>
+				        	</input><br>
+				        </div>
+				      	<div id="resultDiv">
+					      <p class="formSpace rightText">Weight in Desired Metal:</p>
+					      <div id="result" class="content">
+					      </div>
+					    </div>
+				      </form>
+			      </div>
+			    </div>
+			    <a id="metalQuotes" href="http://www.kitco.com/connecting.html">
+					  <img id="metalQuotesIMG" src="http://www.kitconet.com/images/quotes_special.gif" border="0" alt="[Most Recent Quotes from www.kitco.com]">
+					</a>
+			    
+			  </div>
+			  <div id="fragment-2">
+			    <div id="creditAuthorizeForm">
+
+			      <form id='CreditAuthorize' method="post" action="creditAuthorizeProcess.php">
+			        <h1>Credit Card Authorization Form</h1>
+			        <p>Fill out & submit, or <a href="creditCardForm1234321.pdf" download="CreditCardAuthorizationDMJ.pdf">download & fax</a></p>
+			        <div id="errorbox1"><ul></ul></div>
+			        <fieldset>
+			          <label>Company Name:</label><input id="companyName" type="text" name="companyName" >
+			          <br><label>Address:</label><input id="address" type="text" name="address" >
+			          <label>City</label><input id="city" type="text" name="city">
+			          <label>State</label><input id="state" type="text" name="state">
+			          <label>Zip Code</label><input id="zipcode" type="text" name="zipcode">
+			          <br><label>Invoice Paid#</label><input id="invoicePaid" type="text" name="invoicePaid">
+			          <label>Amount Authorizing to Charge</label><input id="amountCharge" type="text" name="amountCharge">
+			          <label>Date</label><input id="date" type="text" name="date">
+			        </fieldset>
+			        <fieldset>
+			          <br><h2>Ship To:</h2>
+			          <label>Company Name</label><input id="toCompanyName" type="text" name="toCompanyName">
+			          <br><label>Address</label><input id="toAddress" type="text" name="toAddress">
+			          <label>City</label><input id="toCity" type="text" name="toCity">
+			          <label>State</label><input id="toState" type="text" name="toState">
+			          <label>Zip Code</label><input id="toZipCode" type="text" name="toZipCode">
+			          <br><label>Shipping Method:</label><input id="shipFedEx" type="radio" name="shipMethod" value="FedEx">FedEx
+			            <input id="shipUPS" type="radio" name="shipMethod" value="UPS">UPS
+			            <input id="shipUSPS" type="radio" name="shipMethod" value="USPS">USPS
+			          <br><label>Shipping Account</label><input id="shipAccount" type="text" name="shipAccount">
+			        </fieldset>
+			        <fieldset>
+			          <br><h2>Billing Information</h2>
+			          <input id="cardMasterCard" type="radio" name="cardType" value="MasterCard">MasterCard
+			            <input id="cardVisa" type="radio" name="cardType" value="Visa">Visa
+			            <input id="cardDiscovery" type="radio" name="cardType" value="Discovery">Discovery
+			          <br><label>Card Holder's Name</label><input id="billName" type="text" name="billName">
+			          <label>Card Number</label><input id="billNumber" type="text" name="billNumber">
+			          <label>Security Code</label><input id="billSecurCode" type="text" name="billSecurCode">
+			          <label>Expiration Date</label><input id="billExpire" type="text" name="billExpire">
+			        </fieldset>
+			        <fieldset>
+			          <label>Card Holder's Signature</label><input id="billSignature" type="text" name="billSignature">
+
+			          <br><input class="submit" type="submit" value="submit">
+			          <p>Terms of authorization: The signing party hereby authorizes DMJ CASTING INC to charge the above listed account for this transaction.
+			          <br>
+			          No merchandise may be returned without express request to DMJ CASTING INC. and authorization of DMJ CASTING INC.
+			          <br><br>
+			          The laws of the State of New York will govern this agreement, without reference to rules governing choice of laws. Any action relating to this agreement must be brought in the federal or state courts located in New York, New York and the parties irrevocably consent to the JURISDICTION of such courts.
+			          <br><br>
+			          This agreement constitutes the ENTIRE AGREEMENT and understanding between the parties with respect to the subject matter of this agreement and supersedes all prior or contemporaneous written or oral agreements or representations between the parties. A written instrument signed by both parties may only modify this agreement.</p>
+			        </fieldset>
+			      </form>
+			    </div>
+			  </div>
+			  <div id="fragment-3">
+			    <div id="creditApplicationForm">
+
+			      <form id='CreditApplication' method="post" action="creditApplicationProcess.php">
+			        <h1>Application For Credit</h1>
+			        <p>Fill out & submit, or <a href="creditApplicationForm1234321.pdf" download="CreditApplicationDMJ.pdf">download & fax</a></p>
+			        <div id="errorbox2"><ul></ul></div>
+			        <fieldset>
+			          <label>Company Name</label><input id="applyCompanyName" type="text" name="applyCompanyName" >
+			          <br><label>Billing Address</label><input id="applyAddress" type="text" name="applyAddress" placeholder="Address">
+			          <label>City</label><input id="applyCity" type="text" name="applyCity" placeholder="City">
+			          <label>State</label><input id="applyState" type="text" name="applyState" placeholder="State">
+			          <label>Zip Code</label><input id="ApplyZipcode" type="text" name="ApplyZipcode" placeholder="Zip Code">
+			          <br><label>Tel</label><input id="applyTel" type="text" name="applyTel">
+			          <label>Fax</label><input id="applyFax" type="text" name="applyFax">
+			          <label>Email</label><input id="applyEmail" type="text" name="applyEmail">
+			          <br>
+			          <label>Name of Owner</label><input id="applyOwner" type="text" name="applyOwner">
+			          <br><label>Authorized Buyer</label><input id="applyAuthBuyer" type="text" name="applyAuthBuyer">
+			          <br><label>Name of Account Payable</label><input id="applyAccPay" type="text" name="applyAccPay">
+			          <br><label>Accounts Payable Email</label><input id="applyAccPayEm" type="text" name="applyAccPayEm">
+			          <br><label>Type of Business</label><input id="applyCorp" type="radio" name="applyBusType" value="Corporation">Corporation
+			            <input id="applyPartner" type="radio" name="applyBusType" value="Partnership">Partnership
+			            <input id="applyIndivid" type="radio" name="applyBusType" value="Individual">Individual
+			          <br><label>Valid Sellers ID</label><input id="applySellerID" type="text" name="applySellerID">
+			          <br><label>Date Business Was Established</label><input id="applyDateEstab" type="text" name="applyDateEstab">
+			          <br><label>Is There an AML Program Instituted</label><input id="applyAML" type="text" name="applyAML">
+			          <br><label>Compliance Officer</label><input id="applyCompliance" type="text" name="applyCompliance">
+			        </fieldset>
+			        <fieldset>
+			          <br><h2>Bank Reference</h2>
+			          <label>Name</label><input id="applyBankName" type="text" name="applyBankName">
+			          <label>Address</label><input id="applyBankAddress" type="text" name="applyBankAddress">
+			          <br><label>Tel</label><input id="applyBankTel" type="text" name="applyBankTel">
+			        </fieldset>
+			        <fieldset>
+			          <br><h2>List three trade references, not including watch, display, or findings companies.</h2>
+			          <label>1) Name</label><input id="applyRefName1" type="text" name="applyRefName1">
+			          <label>Phone</label><input id="applyRefPhone1" type="text" name="applyRefPhone1">
+			          <label>Address</label><input id="applyRefAdd1" type="text" name="applyRefAdd1">
+			          <br><label>2) Name</label><input id="applyRefName2" type="text" name="applyRefName2">
+			          <label>Phone</label><input id="applyRefPhone2" type="text" name="applyRefPhone2">
+			          <label>Address</label><input id="applyRefAdd2" type="text" name="applyRefAdd2">
+			          <br><label>3) Name</label><input id="applyRefName3" type="text" name="applyRefName3">
+			          <label>Phone</label><input id="applyRefPhone3" type="text" name="applyRefPhone3">
+			          <label>Address</label><input id="applyRefAdd3" type="text" name="applyRefAdd3">
+			        </fieldset>
+			        <fieldset>
+			          <p>Terms of Account: If granted credit by your firm, we personally agree to pay all invoices according to the agreed terms. We agree to pay any expenses, including interest of 1.5%/ month and any collection & legal fees that may occur in the collection of late payments. I understand that once account had been established, credit limits will be increased or reduced. I do understand and agree to the above policy.</p>
+			          <label>Signature</label><input id="applySignature" type="text" name="applySignature">
+
+			          <input class="submit" type="submit" value="submit">
+			        </fieldset>
+			        
+			      </form>
+			    </div>
+			  </div>
+			</div>
+ 
+			<script>
+			    $( "#tabs" ).tabs();
+			    $( "#tabs" ).tabs({ heightStyle: "fill" });
+			</script>
+ 
+		</div>
+	</div>
+
+
+
+	<div id="sec6" class="whiteSection sixth">
+		<div class="textSection textFloatLeft">	
+			<div class = "titleDiv">
+				<p class="title">Contact Us</p>
+			</div>
+			<br>
+			<div class="contentDiv" id="contactContentDiv">
+				<p class="content"></p>
+				<div class="content" id="phoneDiv">
+					<p>212-719-1951</p>
+				</div>
+				<div class="content" id="emailDiv">
+					<p>info@DMJcasting.com</p>
+				</div>
+				<div class="content" id="addressDiv">
+					<p>62 W 47th St <br># 508, <br>New York, NY 10036</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+
+
+
+
+	<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    	skrollr.init();
+    </script>
+
+</body>
+</html>
