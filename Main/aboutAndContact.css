@@ -361,7 +361,7 @@ form div{
 	
 }
 #sec6{
-	background: url(http://i61.tinypic.com/33wxf5v.jpg) no-repeat center center;
+	background: url(http://i61.tinypic.com/2yv79c4.jpg) no-repeat center center;
 	-webkit-background-size: cover;  
   	-moz-background-size: cover;  
   	-o-background-size: cover;  
@@ -404,4 +404,19 @@ form h2, form h1{
 	z-index: 100;
 	position: fixed;
 	color: red;
+}
+body .hrDown{
+	width: 100%;
+    height: .001px;
+    border: 0;
+    box-shadow: 0 0px 10px 7px rgba(0,0,0,0.4);
+    z-index: 5;
+}
+body .hrUp{
+	width: 100%;
+    height: .001px;
+    border: 0;
+    box-shadow: 0 0px 10px 7px rgba(0,0,0,0.4);
+    z-index: 5;
+    margin-top: 794px;
 }

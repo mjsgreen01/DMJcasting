@@ -98,3 +98,9 @@ var screenTop = $(window).scrollTop();
 
 
 })
+
+
+$(window).scroll(function () { 
+    //You've scrolled this much:
+       $('#scrollTopDiv').text($(window).scrollTop());
+});
