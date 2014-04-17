@@ -81,16 +81,13 @@ html{
 
 #filler{
 	height:100px;
+	position: inline-block;
 	z-index: -3;
 }
 .headImg{
 	display: block;
 	margin: 0 auto;
-	-webkit-transform:scale(.75);
-	-moz-transform:scale(.75);
-	-o-transform:scale(.75);
-	transform:scale(.75);
-	margin-top: -30px;
+	width: 100%;
 }
 .goldSection{
 	width:100%;
@@ -419,4 +416,38 @@ body .hrUp{
     box-shadow: 0 0px 10px 7px rgba(0,0,0,0.4);
     z-index: 5;
     margin-top: 794px;
+}
+#headSection .imgContainer{
+	width: 587.25px;
+	margin: -52px auto 0 auto;
+	padding-top: 100px;
+}
+
+
+
+
+
+@media screen and (max-width: 1175px){
+	#mainNavUL li{
+		padding: 10px 48px;
+		font-size: .78375em;
+	}
+}
+@media screen and (max-width: 1010px){
+	nav div img{
+		-webkit-transform:scale(.85);
+		-moz-transform:scale(.85);
+		-o-transform:scale(.85);
+		transform:scale(.85);
+		margin-left: 24.5%;
+	}
+	#mainNavUL{
+		margin-right: -30px;
+	}
+}
+@media screen and (max-width: 945px){
+	#mainNavUL li{
+		padding: 10px 40px;
+		font-size: .69375em;
+	}
 }

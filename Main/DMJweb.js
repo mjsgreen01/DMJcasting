@@ -66,14 +66,14 @@ var screenTop = $(window).scrollTop();
     
     
     
-    if (window.console) console.log(screenTop);
+  
 
     $(window).scroll(function(e){
     	parallax();
 	});
 
     $(window).scroll(function(e){
-    	parallaxContent('.headImg', 65, 0.45);
+    	parallaxContent('.imgContainer', 115.25, 0.45);
 	});
     
         
