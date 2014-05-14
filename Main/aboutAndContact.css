@@ -193,16 +193,18 @@ header{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
 .title{
-	font-family: 'Roboto', serif;
-	font-size: 40px;
+	font-family: 'novecento_sans_widedemibold', sans-serif;
+	font-size: 45px;
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
+	letter-spacing: .12em;
 }
 .content{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.3125em;
+	font-family: 'Merriweather', serif;
+	font-size: 1.2025em;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
+	line-height: 1.7em;
 }
 .textSection{
 	display: inline-block;
@@ -450,6 +452,22 @@ body .hrUp{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*jqueryUI*/
 
 
 .ui-helper-hidden {
@@ -1233,6 +1251,11 @@ body .ui-tooltip {
 
 
 
+
+
+
+
+/*Select2 plugin*/
 
 
 .select2-container {
