@@ -3,9 +3,9 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="initial-scale=1">
+<!-- 		<meta name="viewport" content="initial-scale=1"> -->
 		<link type="text/css" rel="stylesheet" href="aboutAndContact.css"/>
 		<link type="text/css" rel="stylesheet" href="Novecento.css"/>		
 
@@ -127,7 +127,7 @@
 	            
 	          
 	          });
-	          $('#Creditapplication').ajaxForm(function() { 
+	          $('#CreditApplication').ajaxForm(function() { 
 	                      alert("Thank you for your comment!"); 
 	          }); 
 	      }); 
@@ -148,7 +148,9 @@
 	<!--<script src = "inViewPlugin.js"></script>-->
 	</head>
 <body>
-	
+	<div id="loading">
+	  <div id="loading-image">Loading, bitches...</div>
+	</div>
 
 	
 	<div class="fixedNav">
@@ -440,12 +442,23 @@
 
 	<script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">
-   	$(function() {
+   	// 	$(function() {
+		  //    var windowWidth = $(window).width();
+		  //    if(windowWidth > 767){
+		  // 		skrollr.init();
+		  // }});
+    </script>
+
+    <script language="javascript" type="text/javascript">
+	  $(window).load(function() {
+	    $('#loading').hide();
+	    $('body').css('overflow','auto');
+
 		     var windowWidth = $(window).width();
 		     if(windowWidth > 767){
 		  		skrollr.init();
-		  }});
-    </script>
-
+		  };
+	});
+	</script>
 </body>
 </html>
