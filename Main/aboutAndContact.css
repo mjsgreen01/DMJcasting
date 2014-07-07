@@ -291,6 +291,7 @@ header{
 	margin-right: 7.291666667%;
 }
 .imgDiv{
+	margin-left: 130px;
 	display: inline-block;
   	/*margin: 0 auto;*/
   	padding: 1.1111111%;
@@ -301,6 +302,22 @@ header{
 #sec3 .imgDiv{
 	margin-right: 115px;
 }
+#sec1 .textSection{
+	float: none;
+	display: block;
+	width: auto;
+}
+
+#sec1 .textSection .contentDiv{
+	display: block;
+}
+#sec1 .textSection .titleDiv{
+	display: block;
+}
+#sec1 .textSection .contentDiv .content{
+	margin-right: 60px;
+}
+
 form{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -1954,6 +1971,10 @@ disabled look for disabled choices in the results dropdown
 		padding: 10px 48px;
 		font-size: .78375em;
 	}
+	.imgDiv{
+		margin-top: 170px;
+		margin-bottom: 20px;	
+	}
 }
 @media screen and (max-width: 1010px){
 	nav div img{
@@ -1965,6 +1986,9 @@ disabled look for disabled choices in the results dropdown
 	}
 	#mainNavUL{
 		margin-right: -30px;
+	}
+	.imgDiv{
+		margin-left: 80px; 
 	}
 }
 @media screen and (max-width: 945px){
@@ -1981,4 +2005,91 @@ disabled look for disabled choices in the results dropdown
 		margin-right: auto;
 		margin-left: auto;
 	}
+	.content{
+		font-size: 1.2025em;
+		line-height: 1.6em;
+	}
+	.contentDiv{
+		margin-top: 10px;
+	}
+	.title{
+		font-size: 40px;
+	}
+	.imgDiv{
+		margin-top: 155px;
+	}
 }
+@media screen and (max-width: 745px){
+	.logo{
+		display: inline-block;
+	}
+	#mainNavUL{
+		display: none;
+	}
+	nav div img{
+		margin-left: 30.5%;
+	}
+	#headSection .imgContainer {
+		width: 526.25px;
+	}
+	#headSection{
+		height: 530px;
+	}
+	#sec1 {
+		margin-top: 530px;
+	}
+	.imgDiv{
+		margin-left: 40px;
+	}
+}
+@media screen and (max-width: 600px){
+	#headSection .imgContainer {
+		width: 426.25px;
+	}
+	#headSection{
+		height: 450px;
+	}
+	#sec1 {
+		margin-top: 450px;
+	}
+	.content {
+		font-size: 1.1025em;
+		line-height: 1.5em;
+	}
+	.title {
+		font-size: 33px;
+	}
+	.contentDiv {
+		margin-top: 5px;
+	}
+	.imgDiv {
+		margin-top: 141px;
+	}
+}
+@media screen and (max-width: 490px){
+	#headSection .imgContainer {
+		width: 346.25px;
+	}
+	#headSection{
+		height: 390px;
+	}
+	#sec1 {
+		margin-top: 390px;
+	}
+}
+@media screen and (max-width: 400px){
+	#headSection{
+		height: 330px;
+	}
+	#headSection .imgContainer {
+		width: 266.25px;
+	}
+	#sec1 {
+		margin-top: 330px;
+	}
+}
+
+
+
+
+

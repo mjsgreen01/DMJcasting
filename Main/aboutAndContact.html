@@ -178,7 +178,8 @@
 	<div id="filler">
 	</div>
 <!-- 	<div style="overflow: hidden; height: 0px; width: 0px;">.</div>
- -->	<div id="headSection" class='headParal'>
+ -->
+ 	<div id="headSection" class='headParal'>
 		<div class="imgContainer">
 			<img id="headImg" class='headImg' alt="DMJ Casting logo" src = "http://i39.tinypic.com/qx10eu.png"/>
 		</div>
@@ -187,6 +188,11 @@
 	<div id="scrollTopDiv"></div>
 
 	<div id="sec1" class="goldSection first">
+		<div class="imgDiv whiteFrame imgFloatRight">
+			<div class="innerGoldFrame">
+				<img alt="David Green president of DMJ Casting" src="AboutUsImgUnedited2.jpg" />
+			</div>
+		</div>
 		<div class="textSection textFloatLeft">	
 			<div class = "titleDiv">
 				<p class="title">ABOUT US</p>
@@ -197,11 +203,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="imgDiv whiteFrame imgFloatRight">
-			<div class="innerGoldFrame">
-				<img alt="David Green president of DMJ Casting" src="AboutUsImgUnedited2.jpg" />
-			</div>
-		</div>
+		
 	</div>
 
 	<div id="sec3" class="whiteSection third" data-smooth-scrolling="off" data-715="background-position-y:-478px;" data-2188="background-position-y:492px">
@@ -444,14 +446,14 @@
 
 
     <script language="javascript" type="text/javascript">
-	  $(window).load(function() {
+	$(window).load(function() {
 	    $('#loading').hide();
 	    $('body').css('overflow','auto');
 
-		     var windowWidth = $(window).width();
-		     if(windowWidth > 767){
-		  		skrollr.init();
-		  };
+	    var windowWidth = $(window).width();
+	    if(windowWidth > 767){
+	  		skrollr.init();
+	 	};
 	});
 	</script>
 </body>
