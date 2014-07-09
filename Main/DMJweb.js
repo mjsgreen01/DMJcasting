@@ -25,14 +25,14 @@ $(document).ready(function(){
             }, 1000);
         //});
     });
-	$("#conversions").click(function (e){
-        //$(this).animate(function(){
-        	e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $("#sec4").offset().top -100
-            }, 1000);
-        //});
-    });
+	// $("#conversions").click(function (e){
+ //        //$(this).animate(function(){
+ //        	e.preventDefault();
+ //            $('html, body').animate({
+ //                scrollTop: $("#sec4").offset().top -100
+ //            }, 1000);
+ //        //});
+ //    });
     $("#faqs").click(function (e){
         //$(this).animate(function(){
         	e.preventDefault();
