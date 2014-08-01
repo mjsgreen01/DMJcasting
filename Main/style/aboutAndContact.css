@@ -89,7 +89,7 @@ body{
 #headSection{
 	width:100%;
 	height:600px;
-	background: url(http://i42.tinypic.com/ixb28o.jpg) no-repeat center center;
+	background: url(firstImg.jpg) no-repeat center center;
 	-webkit-background-size: cover;  
   	-moz-background-size: cover;  
   	-o-background-size: cover;  
@@ -104,7 +104,7 @@ body{
 	margin-top: 600px;
 }
 #sec3{
-	background: url(http://i60.tinypic.com/35d838h.jpg) no-repeat center center;
+	background: url(techImg.jpg) no-repeat center center;
 	-webkit-background-size: cover;  
   	-moz-background-size: cover;  
   	-o-background-size: cover;  
@@ -126,7 +126,7 @@ body{
 .goldSection{
 	width:100%;
 	height:794px;
-	background: url(http://i42.tinypic.com/2liv8ud.jpg) no-repeat center center;
+	background: url(goldBack.jpg) no-repeat center center;
 	-webkit-background-size: cover;  
   	-moz-background-size: cover;  
   	-o-background-size: cover;  
@@ -419,7 +419,7 @@ form div{
 	
 }
 #sec6{
-	background: url(http://i61.tinypic.com/2yv79c4.jpg) no-repeat center center;
+	background: url(NYskyline4.jpg) no-repeat center center;
 	-webkit-background-size: cover;  
   	-moz-background-size: cover;  
   	-o-background-size: cover;  
