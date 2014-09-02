@@ -45,8 +45,8 @@
 			//$emailArrayFunction = function($emailArray){foreach($emailArray as $item){echo $item;}};
 
 			//assigns email variables and sends the email
-			$to = "mjsgreen01@gmail.com";
-			$subject = "Credit Authorize Test";
+			$to = "info@dmjcasting.com";
+			$subject = "Credit Authorize Form";
 			$body = implode("\n", $emailArray);
 			mail($to, $subject, $body);
 		?>
